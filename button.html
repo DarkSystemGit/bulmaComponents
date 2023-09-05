@@ -1,0 +1,9 @@
+<button class="button" id="${id}">${text}${__children}</button>
+<script>
+    var btn = document.getElementById("${id}")
+    var attrs =[]
+    JSON.parse(${attrs}).forEach(attr=>{
+        attrs.push(attr)
+    })
+    btn.setAttribute("class", `${btn.getAttribute("class")} ${attrs.join(' ')}`);
+</script>

@@ -1,5 +1,8 @@
 {
-  "dependencies": {
-    "bulma": "^0.9.4"
+  "devDependencies": {
+    "sass":"latest"
+  },
+  "scripts": {
+    "build":"sass --no-source-map css/main.scss:css/main.css"
   }
 }

@@ -1,0 +1,9 @@
+<div class="field" id="${id}">${__children}</button>
+    <script>
+        var elm = document.getElementById("${id}")
+        var attrs =[]
+        JSON.parse(${attrs}).forEach(attr=>{
+            attrs.push(attr)
+        })
+        elm.setAttribute("class", `${elm.getAttribute("class")} ${attrs.join(' ')}`);
+    </script>
