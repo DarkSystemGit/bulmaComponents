@@ -1,9 +1,2 @@
-<div class="buttons" id="${id}">${__children}</button>
-<script>
-    var btn = document.getElementById("${id}")
-    var attrs =[]
-    JSON.parse(${attrs}).forEach(attr=>{
-        attrs.push(attr)
-    })
-    btn.setAttribute("class", `${btn.getAttribute("class")} ${attrs.join(' ')}`);
-</script>
+@include preprocessors/buttons
+<div class="buttons" >${__children}</button>
